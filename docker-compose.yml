@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+    bb_service:
+        build: .
+        container_name: haydesoft_bb
+        restart: always
+        ports:
+            - "1001:1001"
+        environment:
+          TZ: "Europe/Istanbul"
