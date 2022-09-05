@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-    git_service:
+    bb_service:
         build: .
-        container_name: haydesoft_gittest
+        container_name: haydesoft_bb
         restart: always
         ports:
-            - "1003:1003"
+            - "1001:1001"
         environment:
           TZ: "Europe/Istanbul"
